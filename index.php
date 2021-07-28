@@ -1,3 +1,5 @@
+<?php include "process.php" ; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -80,16 +82,17 @@
 <body>
     <div class='main'>
         <h1> Exporter</h1>
-        <form action="" method="post">
+        <form method="POST" action="" >
             <input type="text" name="title" placeholder="Title Here">
             <textarea name="content" placeholder="Content Here" style="height: 100px"></textarea>
             <select name="format">
                 <option value="Text">Text File</option>
                 <option value="Pdf">Pdf Format</option>
                 <option value="Json">Json File</option>
-                <option value="Csv">Csv File</option>
+                <option value="Excel">Excel File</option>
             </select>
-            <button type='submit'>Export to File</button>
+            <input type="text" name="newFile" placeholder="Write your file name">
+            <button name='sub' type='submitBtn'> Export to File </button>
         </form>
     </div>
 </body>

@@ -1,7 +1,18 @@
 <?php
 namespace App\Classes ;
+interface Exportable
+{
+    public function export();
+}
+abstract class Exporter implements Exportable 
+{
+    # Properties
+    protected $format ;
+    protected $data ;
 
-class Exporter {
-
-  
+    public function __construct($data)
+    {
+        $this->data = $data ;
+    }
+    
 }
