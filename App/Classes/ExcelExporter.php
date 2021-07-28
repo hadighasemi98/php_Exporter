@@ -5,7 +5,6 @@ class ExcelExporter extends Exporter
 {
     # Properties
     protected $format = ".csv" ;
-    protected $data;
 
     public function export()
     {

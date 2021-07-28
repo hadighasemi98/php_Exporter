@@ -5,7 +5,6 @@ class TextExporter extends Exporter
 {
     # Properties
     protected $format = ".txt" ;
-    protected $data;
 
     public function export()
     {

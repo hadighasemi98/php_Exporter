@@ -5,7 +5,6 @@ class JsonExporter extends Exporter
 {
     # Properties
     protected $format = ".json" ;
-    protected $data;
 
     public function export()
     {
